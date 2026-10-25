@@ -46,12 +46,12 @@ Manual checks (fill in the Result column):
 
 | Check | How | Result |
 |---|---|---|
-| Keyboard only | Tab through search, filters, card buttons, dialog and form; Esc closes the dialog and focus returns to the card | |
-| Visible focus | Focus outline visible on every control | |
-| Errors without colour | Invalid form shows "Error:" text, not only a red border | |
-| 360px width | DevTools device toolbar at 360px; no horizontal scroll | |
-| 320px width | Same at 320px | |
-| 200% zoom | Browser zoom 200%; content still usable | |
+| Keyboard only | Tab through search, filters, card buttons, dialog and form; Esc closes the dialog and focus returns to the card | Pass (manual) |
+| Visible focus | Focus outline visible on every control | Pass (manual) |
+| Errors without colour | Invalid form shows "Error:" text, not only a red border | Pass (manual) |
+| 360px width | DevTools device toolbar at 360px; no horizontal scroll | Pass (manual) |
+| 320px width | Same at 320px | Pass (manual) |
+| 200% zoom | Browser zoom 200%; content still usable | Pass (manual) |
 
 ## 5. Manual user-journey checks
 
@@ -59,12 +59,12 @@ Run `npm start` and open http://localhost:3000.
 
 | Check | How | Result |
 |---|---|---|
-| Loading state | DevTools Network, throttling Slow 4G, reload; spinner shows | |
+| Loading state | DevTools Network, throttling Slow 4G, reload; spinner shows | Pass (manual) |
 | Cards from the API | Five cards; Network tab shows `GET /api/internships` | Pass (live site) |
 | Filters, search and shareable URL | Pick a domain and mode, search `sql`; the address bar updates; reload keeps the view | Pass (live site) |
-| Empty state | Search `zzz`; message and Clear filters button | |
-| Error and retry | Network, tick Offline, change a filter; error and Retry appear; untick Offline, click Retry | |
-| Client validation | Submit the empty form; errors show and no POST appears in Network | |
+| Empty state | Search `zzz`; message and Clear filters button | Pass (manual) |
+| Error and retry | Network, tick Offline, change a filter; error and Retry appear; untick Offline, click Retry | Pass (manual) |
+| Client validation | Submit the empty form; errors show and no POST appears in Network | Pass (manual) |
 | Successful application | Valid name and email; success message with a reference number | Pass (live site) |
 | Duplicate | Apply again with the same email; the server's duplicate message shows | Pass (live site) |
 | Rate limit | Run the loop below; ten `201`, then `429` | Pass (10 x 201, then 429) |

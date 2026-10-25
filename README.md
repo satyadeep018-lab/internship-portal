@@ -6,7 +6,7 @@ A student internship portal: browse, search and filter openings, inspect details
 |---|---|
 | **Live application** | https://internship-portal-p88e.onrender.com |
 | **Repository** | https://github.com/satyadeep018-lab/internship-portal |
-| **Walkthrough video (2 min)** | _add walkthrough video link here_ |
+| **Walkthrough video (2 min)** | https://www.loom.com/share/884da6d184784e9bb5820047a7c71635 |
 | **Test evidence** | [TEST-REPORT.md](TEST-REPORT.md) |
 | **Security checklist** | [SECURITY.md](SECURITY.md) |
 | **Video script** | [WALKTHROUGH.md](WALKTHROUGH.md) |

@@ -36,7 +36,7 @@ Budget: p95 under 100 ms per URL. Frontend weight budget (under 70 KB) is enforc
 
 | Performance | Accessibility | Best Practices | SEO |
 |---|---|---|---|
-| LH_PERF | LH_A11Y | LH_BP | LH_SEO |
+| 97 | 100 | 100 | 100 |
 
 ## 4. Accessibility
 
@@ -60,13 +60,13 @@ Run `npm start` and open http://localhost:3000.
 | Check | How | Result |
 |---|---|---|
 | Loading state | DevTools Network, throttling Slow 4G, reload; spinner shows | |
-| Cards from the API | Five cards; Network tab shows `GET /api/internships` | |
-| Filters, search and shareable URL | Pick a domain and mode, search `sql`; the address bar updates; reload keeps the view | |
+| Cards from the API | Five cards; Network tab shows `GET /api/internships` | Pass (live site) |
+| Filters, search and shareable URL | Pick a domain and mode, search `sql`; the address bar updates; reload keeps the view | Pass (live site) |
 | Empty state | Search `zzz`; message and Clear filters button | |
 | Error and retry | Network, tick Offline, change a filter; error and Retry appear; untick Offline, click Retry | |
 | Client validation | Submit the empty form; errors show and no POST appears in Network | |
-| Successful application | Valid name and email; success message with a reference number | |
-| Duplicate | Apply again with the same email; the server's duplicate message shows | |
+| Successful application | Valid name and email; success message with a reference number | Pass (live site) |
+| Duplicate | Apply again with the same email; the server's duplicate message shows | Pass (live site) |
 | Rate limit | Run the loop below; ten `201`, then `429` | |
 | Headers | `curl -I http://localhost:3000/` shows `content-security-policy` and `x-request-id` | |
 | Health | `curl http://localhost:3000/health` and `/ready` return success | |
@@ -82,8 +82,8 @@ for i in $(seq 1 12); do curl -s -o /dev/null -w "%{http_code} " -X POST http://
 
 | Check | Result |
 |---|---|
-| Live URL opens and shows cards | |
-| `/health` and `/ready` succeed on the live URL | |
+| Live URL opens and shows cards | Pass |
+| `/health` and `/ready` succeed on the live URL | Pass (both return success) |
 | Free-tier sleep and data reset noted in README | Yes |
 
 ## 7. Known limitations

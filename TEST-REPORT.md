@@ -67,10 +67,10 @@ Run `npm start` and open http://localhost:3000.
 | Client validation | Submit the empty form; errors show and no POST appears in Network | |
 | Successful application | Valid name and email; success message with a reference number | Pass (live site) |
 | Duplicate | Apply again with the same email; the server's duplicate message shows | Pass (live site) |
-| Rate limit | Run the loop below; ten `201`, then `429` | |
-| Headers | `curl -I http://localhost:3000/` shows `content-security-policy` and `x-request-id` | |
-| Health | `curl http://localhost:3000/health` and `/ready` return success | |
-| Logs | Server window shows JSON lines with no names or emails | |
+| Rate limit | Run the loop below; ten `201`, then `429` | Pass (10 x 201, then 429) |
+| Headers | `curl -I http://localhost:3000/` shows `content-security-policy` and `x-request-id` | Pass (CSP and x-request-id present, no x-powered-by) |
+| Health | `curl http://localhost:3000/health` and `/ready` return success | Pass (local and live) |
+| Logs | Server window shows JSON lines with no names or emails | Pass (JSON lines, no names or emails) |
 
 Rate-limit loop (Git Bash, fresh server):
 

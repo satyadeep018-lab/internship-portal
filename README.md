@@ -9,7 +9,6 @@ A student internship portal: browse, search and filter openings, inspect details
 | **Walkthrough video (2 min)** | https://www.loom.com/share/884da6d184784e9bb5820047a7c71635 |
 | **Test evidence** | [TEST-REPORT.md](TEST-REPORT.md) |
 | **Security checklist** | [SECURITY.md](SECURITY.md) |
-| **Video script** | [WALKTHROUGH.md](WALKTHROUGH.md) |
 
 ## The user journey
 

@@ -1,0 +1,24 @@
+{
+  "name": "internship-portal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Internship portal capstone: static frontend plus Express and SQLite API with logging, health checks, tests and security hardening.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning --env-file-if-exists=.env src/server.js",
+    "dev": "node --watch --disable-warning=ExperimentalWarning --env-file-if-exists=.env src/server.js",
+    "seed": "node --disable-warning=ExperimentalWarning --env-file-if-exists=.env src/seed.js",
+    "db:reset": "node --disable-warning=ExperimentalWarning --env-file-if-exists=.env src/seed.js --reset",
+    "test": "node --test",
+    "perf": "node --disable-warning=ExperimentalWarning scripts/perf-check.js",
+    "check": "npm test && npm audit"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0"
+  }
+}
